@@ -1,0 +1,1 @@
+docker run -it bloomon_solution sample.txt 
