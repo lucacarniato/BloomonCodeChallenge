@@ -19,7 +19,8 @@ I followed the latter approach, following these steps:
     
     + Update the number of available flowers for each specie.
 
-    + Repeat until the number of available flowers is larger than 0 or a bouquet cannot be generated.
+    + Repeat until the number of available flowers is larger than and bouquet can be generated. 
+    Break when one of these two conditions are not satisfied.
     
   This approach uses a greedy algorithm to maximize the number of bouquets for each group (large/small). 
   For the sample.txt input file, 15 large and 15 small bouquets were generated.
