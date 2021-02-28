@@ -8,7 +8,7 @@ I followed the latter approach, following these steps:
 
 + Parse the file sample.txt, separating large and small designs and flowers.
 
-+ For each group (large/small) generate the bouquets as follow:
++ For each group (large/small), generate the bouquets as follow:
 
     + Loop over the designs, for each design compute the minimum total cost of forming a valid bouquet. 
     The cost is calculated by summing the marginal cost of adding every single flower to the bouquet. 
@@ -19,13 +19,12 @@ I followed the latter approach, following these steps:
     
     + Update the number of available flowers for each specie.
 
-    + Repeat until the number of available flowers is larger than and bouquet can be generated. 
-    Break when one of these two conditions is not satisfied.
+    + Repeat until no bouquet can be generated.
     
   This approach uses a greedy algorithm to maximize the number of bouquets for each group (large/small). 
-  For the sample.txt input file, 15 large and 15 small bouquets were generated.
+  For the flowers available in the sample.txt input file, 15 large and 15 small bouquets were generated.
   
-+ From the generated bouquets encode the bouquet code and send the results to standard output.
++ From the generated bouquets encode the bouquet code and print the results to standard output.
 
 ## Build docker
 
